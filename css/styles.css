@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+*, main, header, section{
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto, Helvetica, Arial;
+    color: white;
+}
+
+@media(min-width: 768px){
+    .nav-item{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #585B5B !important;
+        border-top: 2px solid #585B5B !important;
+        border-right: 2px solid #585B5B !important;
+        border-left: 1px solid #585B5B !important;
+        background-color: #546E9F!important;
+        width: 25%;
+
+        font-size: 100%;
+        font-weight: bold;
+        text-align: center;
+    }
+    .nav-item:first-child{
+        border-left: 2px solid #585B5B !important;
+        border-radius: 15px 0px 0px 15px !important;
+    }
+    .nav-item:last-child{
+        border-radius: 0px 15px 15px 0px !important;
+    }    
+}
+@media(max-width: 767px){
+    .nav-item{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #585B5B !important;
+        background-color: #546E9F!important;
+        font-weight: bold;
+        text-align: center;
+    }
+    .nav-item:first-child{
+        border-radius: 15px 15px 0px 0px !important;
+    }
+    .nav-item:last-child{
+        border-radius: 0px 0px 15px 15px !important;
+    }
+}
+#navbarNav{
+    padding: 0px;
+}
+header{
+    background-color: #9EACC7;
+    opacity: 0.9;
+}
+h2{
+    font-family: Roboto, Helvetica, Arial;
+    margin-bottom: 20px !important;
+    letter-spacing: 3px;
+}
+header section nav{
+    background-color: #9EACC7;
+    width: 100% !important;
+    height: 100% !important;
+}
+header section figure img{
+    max-height: 120px;
+}
+@media(pointer: fine){
+    header section img:hover{
+        transform: scale(1.03,1.12);
+    }
+}
+
+header section nav aside ul{
+    width: 100%;
+}
+header section nav aside ul li a{
+    color:white !important;
+    letter-spacing: 3px;
+}
+@media(pointer:fine){
+    header section nav aside ul li:hover a{
+        color:red !important;
+        font-size:130%;
+    }
+}
+@media(max-width: 546px){
+    #home{
+        background-position: 50% -60%;
+    }
+}
+#home{
+    background-image: url("../img/faro.jpeg");
+    filter: brightness(300%) contrast(90%) blur(1px) saturate(200%);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+    padding: 60px;
+
+    color: white;
+}
+body{
+    background-image: url("../img/Operations/operationsnight.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 1600px;
+    max-height: 3200px;
+}
+#home article{
+    height: 800px;
+    font-family: Roboto, Helvetica, Arial;
+}
+#home h1{
+    font-family: Roboto, Helvetica, Arial;
+    font-size: 500%;
+    letter-spacing: 5px;
+    margin-top: 150px;
+}
+@media(pointer:fine){
+    #home:hover h1{
+        animation-name: h1animate;
+        animation-duration: 1500ms;
+    }
+}
+@keyframes h1animate{
+    from {
+        transform: translateX(300%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+#home h1 p{
+    font-size: 50%;
+    font-family: Roboto, Helvetica, Arial;
+}
+
+#carouselExampleIndicators{
+    margin: 0px auto;
+}
+
+#carouselExampleIndicators .carousel-inner figure img{
+    max-width: 95%;
+    min-width: 70%;
+    height: 100%;
+    text-align: center;
+}
+
+.container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.card{
+    font-family: Roboto, Helvetica, Arial;
+    border-radius: 20px 20px 0px 0px !important;
+    border: 3px solid #585B5B !important;
+    border-bottom: 6px solid #585B5B !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 400px !important;
+    background-color: #546E9F !important;
+    letter-spacing: 1px !important;
+}
+.contact-list{
+    display: block;
+    list-style-type: none;
+}
+.contact-list li{
+    margin-top: 5px;
+    margin-bottom: 5px;    
+}
+@media(pointer:fine){
+    .contact-list li:hover{
+        transform: scale(1.2, 1.2);
+        z-index: 10;
+    }
+}
+@media(min-width: 768px){
+    header .row{
+        flex-direction:row;
+    }
+    main section article p{
+        font-size: 120%;
+    }
+    .contact-list{
+        font-size: 150%;
+    }
+}
+@media(max-width: 767px){
+    header .row{
+        flex-direction:row-reverse;
+    }
+    
+}
+@media(min-width: 500px) and (max-width:767px){  
+    main section article p{
+        font-size: 110%;
+    }
+    .contact-list{
+        font-size: 90%;
+    }
+}
+@media(max-width: 379px){
+    .contact-list{
+        font-size: 70%;
+    }
+}
+@media(min-width: 340px) and (max-width:500px){
+    .contact-list li{
+        margin: 0px;
+        padding: 0px;
+        font-size: 80%;
+    }
+    
+}
+@media(max-width: 339px){
+    .card{
+        max-width: 300px !important;
+    }
+}
+.contact-list li a{
+    text-decoration: none;
+    color: black;
+}
+.contact-list li a img{
+    height: auto;
+    width: 30px;
+    margin-right: 10px;
+}
+
+#aboutusd article{
+    letter-spacing: 1px;
+}
+@media(pointer:fine){
+    #aboutus p:hover, #operations p:hover, #ourservices p:hover{
+        border: 2px solid #585B5B;
+        background-color: #9EACC7;    
+        z-index: 10;
+    }
+}
+@media(min-width: 768px) and (pointer:fine){
+    #aboutus p:hover, #operations p:hover, #ourservices p:hover{
+        line-height: 50px;
+        font-size: 150%;
+    }
+}
+@media(max-width: 767px) and (pointer:fine){
+    #aboutus p:hover, #operations p:hover, #ourservices p:hover{
+        line-height: 30px;
+        font-size: 130%;
+    }
+}
+
+#contact{
+    font-family: Roboto, Helvetica, Arial;
+    padding: 20px;
+    background-color:#546E9F;
+    opacity: 0.8;
+    border: 2px solid #585B5B;
+}
+#contact ul li, #contact h2, #contact ul li label {
+    font-family: Roboto, Helvetica, Arial;
+    letter-spacing: 2px;
+    color: white;
+}
+@media(pointer:fine){
+    h2:hover, h3:hover{
+        font-size: 300% !important;
+    }
+}
+
+/*Blog*/
+.post-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    overflow:auto;
+    background-image: url("../img/Operations/operationsnight.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 1800px;
+    max-height: 3200px;
+}
+.Zebra_Pagination{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    opacity: 0.5;
+}
+.Zebra_Pagination .active .page-link{
+    background-color: #546E9F!important;
+}
+.post-section .post-article{
+    border: 2px solid darkgray;
+    box-shadow: 7px 7px 9px darkgray;
+    background-color: #546E9F;
+    opacity: 0.7;
+    margin: 10px;
+    padding: 0px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;    
+}
+@media(min-width: 1590px){
+    .post-section .post-article{
+        width: 800px;
+        min-height: 700px;
+        max-height: 800px;
+    }
+}
+@media(min-width: 1060px) and (max-width: 1589px){
+    .post-section .post-article{
+        width: 510px;
+        height: 550px;
+    }
+}
+@media(min-width: 940px) and (max-width: 1059px){
+    .post-section .post-article{
+        width: 450px;
+        height: 530px;
+    }
+}
+@media(max-width: 939px){
+    .post-section .post-article{
+        width: 450px;
+        height: 380px;
+    }
+}
+.post-article span h3, .post-article span p{
+    color: white;
+    font-weight: bolder;
+}
+.post-article span{
+    display: inline-block;
+    bottom: 0;
+    width: 100%;
+    margin: 0px;
+}
+.post-article span:first-child{
+    height: 80%;
+    overflow: hidden;
+    padding: 10px;
+}
+.post-article span:last-child{
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: end;
+    padding: 0px;
+}
+.post-article span:last-child a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 150%;
+    width: 32.8%;
+    padding: 12px;
+    background-color: skyblue;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+@media(pointer:fine){
+    .post-section .post-article:hover h3,.post-section .post-article:hover p{
+        font-size: 200%;
+        padding: 10px;
+    }
+}
+
+/*POST*/
+#postsectionid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: start;
+    overflow:auto;
+    background-image: url("../img/Operations/operationsnight.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 1600px;
+    max-height: 3200px;
+}
+#postarticleid{
+    min-width: 70%;
+    max-width: 95%;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    box-shadow: 7px 7px 9px darkgray;
+    background-color: #546E9F;
+    opacity: 0.7;
+}
+#postarticleid h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+@media(min-width: 601px){
+    #postsectionid{
+        margin: 50px;
+    }
+    #postarticleid{
+        padding: 50px;
+    }
+}
+@media(max-width: 600px) and (min-width: 301px){
+    #postsectionid{
+        margin: 20px;
+    }
+    #postarticleid{
+        padding: 20px;
+    }
+}
+@media(max-width: 300px){
+    #postsectionid{
+        margin: 10px;
+    }
+    #postarticleid{
+        padding: 10px;
+    }
+}
